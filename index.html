@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friendship Club</title>
+
+<!-- 🔥 Instagram Browser Detect & Chrome Redirect -->
+<script>
+(function () {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    if (ua.indexOf("Instagram") > -1) {
+        var currentUrl = window.location.href;
+        if (/android/i.test(ua)) {
+            window.location.href =
+                "intent://" + currentUrl.replace(/^https?:\/\//, "") +
+                "#Intent;scheme=https;package=com.android.chrome;end";
+        }
+        if (/iPhone|iPad|iPod/i.test(ua)) {
+            alert("⚠️ Ye page Instagram browser me support nahi karta.\nPlease Chrome / Safari me open karein.");
+        }
+    }
+})();
+</script>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+.container{
+  max-width:480px;
+  margin:auto;
+  padding:20px;
+  text-align:center;
+}
+
+/* 🌟 GOLDEN HEADER */
+h1{
+  font-size:34px;
+  margin-bottom:35px;
+  background: linear-gradient(45deg, #f9d976, #f39f00, #fff2b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  letter-spacing:1px;
+}
+
+/* SUB HEADING */
+h2{
+  font-size:22px;
+  line-height:1.5;
+  margin-bottom:35px;
+}
+
+.highlight{
+  color:#ffd700;
+  border-bottom:2px solid #ffd700;
+  padding-bottom:2px;
+}
+
+/* LIST */
+ul{
+  list-style:none;
+  text-align:left;
+  margin-top:20px;
+}
+
+ul li{
+  font-size:16px;
+  margin-bottom:12px;
+}
+
+/* 💚 ATTRACTIVE WHATSAPP BUTTON */
+.whatsapp-btn{
+  display:block;
+  width:100%;
+  background: linear-gradient(135deg, #00c853, #00e676);
+  color:#fff;
+  text-decoration:none;
+  padding:20px 0;
+  margin:35px 0;
+  font-size:22px;
+  font-weight:bold;
+  border-radius:8px;
+  box-shadow: 0 0 20px rgba(0, 255, 120, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-btn:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 30px rgba(0, 255, 120, 0.9);
+}
+
+/* IMAGE SECTION */
+.image-section{
+  width:100%;
+  aspect-ratio:1/1;
+  overflow:hidden;
+}
+
+.image-section img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <br><br>
+
+  <h1>Radhika Friendship Club</h1>
+
+  <h2>
+    <span class="highlight">Meeting</span> with High-Profile
+    <span class="highlight">Madam Near You</span>
+  </h2>
+
+  <ul>
+        <li>✔ Part-Time Opportunity</li>
+        <li>✔ Trusted High-Profile Madam Network</li>
+        <li>✔ Earnings: ₹16,000 – ₹24,000 per assignment (performance based)</li>
+        <li>✔ Immediate Income Opportunity</li>
+        <li>✔ Flexible work • Attractive incentives DM to apply</li>
+        <li>✔ Chat on WhatsApp for Jo*b information</li>
+  </ul>
+
+  <a class="whatsapp-btn" href="https://wa.me/918859165906?text=Please%20send%20information" target="_blank">
+    💬 Chat on WhatsApp Now
+  </a>
+
+  <div class="image-section">
+    <img src="https://i.ibb.co/yx5Kq6D/14039.png" alt="Image">
+  </div>
+
+</div>
+
+</body>
+</html>
